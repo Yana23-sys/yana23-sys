@@ -438,11 +438,24 @@ export default function About() {
                             key={`${institution.name}-${index}`}
                             fillWidth gap="4"
                             direction="column">
-                          <Text
-                              id={institution.name}
-                              variant="heading-strong-l">
-                            {institution.name}
-                          </Text>
+                          <Flex
+                              fillWidth
+                              justifyContent="space-between"
+                              alignItems="flex-end"
+                              marginBottom="4">
+                            <Text
+                                id={institution.name}
+                                variant="heading-strong-l"
+                                style={{ maxWidth: '60%' }}>
+                              {institution.name}
+                            </Text>
+                            <Text
+                                variant="heading-default-xs"
+                                onBackground="neutral-weak"
+                                style={{ flexGrow: 1, textAlign: 'right' }}>
+                              {institution.timeframe}
+                            </Text>
+                          </Flex>
                           <Text
                               variant="heading-default-xs"
                               onBackground="neutral-weak">

@@ -60,7 +60,7 @@ const about = {
         description: <>Junior Full-Stack Developer with a solid foundation in JavaScript, React, Node.js and a background in graphic design. I’ve honed my problem-solving and collaborative skills through team projects, focusing on both frontend and backend development. Eager to contribute to and learn from a dynamic team, exploring new opportunities for growth in the tech industry.</>
     },
     professionalDevelopment: {
-        display: true, // set to false to hide this section
+        display: true, 
         title: 'Professional Development',
         experiences: [
             {
@@ -99,86 +99,66 @@ const about = {
         ]
     },
     work: {
-        display: true, // set to false to hide this section
+        display: true, 
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'BrushMe',
+                timeframe: 'Oct 2021 - Feb 2022',
+                role: 'Graphic Designer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Utilised Photoshop, Adobe Illustrator, and other software to digitise, create, and manipulate images.</>,
+                    <>Developed innovative design solutions, addressing client needs and project requirements.</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
-                ]
-            },
-            {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
-                achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
-                ],
-                images: [ ]
+                images: []
             }
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
+        display: true, 
         title: 'Education',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
-            },
-            {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Kyiv National University of Trade and Economics',
+                timeframe: 'Sep 2015 - Jul 2019',
+                description: <>Bachelor degree in Management (Honours)</>,
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
+        display: true, 
         title: 'Technical skills',
         skills: [
             {
                 title: 'Languages & Frameworks',
                 items: [
                     { name: 'JavaScript, TypeScript, Node.js, React, Next.js, HTML5, CSS3, Tailwind', 
-                        description: 'Proficient in developing modern web applications using popular frontend and backend technologies' },
-                    { name: 'Docker', description: 'Containerised applications for consistent development and deployment' },
+                        description: 'Proficient in developing modern web applications using popular frontend and backend technologies.' },
+                    { name: 'Docker', description: 'Containerised applications for consistent development and deployment.' },
                 ]
             },
             {
                 title: 'Databases',
                 items: [
-                    { name: 'PostgreSQL, SQL, MongoDB', description: 'Experienced in working with both relational and NoSQL databases, designing schemas, and handling database interactions efficiently' },
+                    { name: 'PostgreSQL, SQL, MongoDB', description: 'Experienced in working with both relational and NoSQL databases, designing schemas, and handling database interactions efficiently.' },
                 ]
             },
             {
                 title: 'Version Control',
                 items: [
-                    { name: 'Git, GitHub, GitHub Actions', description: 'Strong experience in version control with Git, including automated CI/CD pipelines using GitHub Actions' },
+                    { name: 'Git, GitHub, GitHub Actions', description: 'Strong experience in version control with Git, including automated CI/CD pipelines using GitHub Actions.' },
                 ]
             },
             {
                 title: 'Agile Methodologies',
                 items: [
-                    { name: 'Pair Programming, Test-driven development (TDD), SCRUM', description: 'Experience working in Agile teams, focusing on collaboration, continuous improvement, and delivering high-quality solutions' },
+                    { name: 'Pair Programming, Test-driven development (TDD), SCRUM', description: 'Experience working in Agile teams, focusing on collaboration, continuous improvement, and delivering high-quality solutions.' },
                 ]
             },
             {
                 title: 'Testing',
                 items: [
-                    { name: 'Jest, SuperTest (Unit & Integration Testing)', description: 'Competent in ensuring code quality through automated unit and integration tests to catch bugs early in the development process' },
+                    { name: 'Jest, SuperTest (Unit & Integration Testing)', description: 'Competent in ensuring code quality through automated unit and integration tests to catch bugs early in the development process.' },
                 ]
             }
         ]
