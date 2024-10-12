@@ -1,34 +1,33 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Yana',
+    lastName:  'Turiak',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Software Engineer',
+    role:      'Junior Software Developer',
     avatar:    '/images/avatar.jpg',
-    location:  'Manchester, UK',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: []  // optional: Leave the array empty if you don't want to display languages
+    location:  'Manchester, UK',        
+    languages: ['English', 'Ukrainian', 'Russian', 'Polish'] 
 }
 
 const social = [
-    // Links are automatically displayed.
-    // Import new icons in /once-ui/icons.ts
+
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/Yana23-sys',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/yana-turiak/',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:Turyak1998@gmail.com',
     },
 ]
 
@@ -36,8 +35,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Junior Software Developer</>,
+    subline: <>Creative Problem Solver | Passionate Full-Stack Developer | Always Learning</>
 }
 
 const about = {
@@ -46,7 +45,7 @@ const about = {
     description: `Meet ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,
-        subItems: true
+        subItems: false
     },
     avatar: {
         display: true
@@ -58,7 +57,46 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Junior Full-Stack Developer with a solid foundation in JavaScript, React, Node.js and a background in graphic design. I’ve honed my problem-solving and collaborative skills through team projects, focusing on both frontend and backend development. Eager to contribute to and learn from a dynamic team, exploring new opportunities for growth in the tech industry.</>
+    },
+    professionalDevelopment: {
+        display: true, // set to false to hide this section
+        title: 'Professional Development',
+        experiences: [
+            {
+                company: 'Northcoders Full-Stack JavaScript Bootcamp',
+                timeframe: 'Jun 2024 - Sep 2024',
+                role: 'Trainee Software Developer',
+                achievements: [
+                    <>Completed an intensive coding bootcamp focused on Full-Stack JavaScript development, covering Node.js, React, PostgreSQL and various JavaScript frameworks and libraries. Gained hands-on experience in pair programming, TDD, and utilising Git for version control.
+                </>,
+                ],
+                projects: [
+                    {
+                        name: 'Northcoders News',
+                        description: <> Developed a news aggregation platform based on React, NodeJS, Express and PostgreSQL technologies. The web app has mobile-first responsive design and supports optimistic rendering, as well as CRUD operations, pagination, filtering, and sorting of articles.</>,
+                    },
+                    {
+                        name: 'ShelfShare',
+                        description: <> Developed a book swapping platform using Next.js, React, Express and MongoDB, where users can list books for swapping, request swaps, and receive notifications for swap-related updates. Implemented features such as user authentication, real-time notifications, and a profile page displaying active and past swaps. Utilised GitHub Actions for Continuous Integration, setting up a manual deployment pipeline to Docker Hub and Northflank. </>,
+                    }
+                ],
+                images: [ 
+                    {
+                        src: '/images/projects/nc-news.png',
+                        alt: 'Northcoders News',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/shelf-share.png',
+                        alt: 'ShelfShare',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            }
+        ]
     },
     work: {
         display: true, // set to false to hide this section
@@ -112,16 +150,35 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Languages',
+                title: 'Languages & Frameworks',
                 items: [
-                    { name: 'JavaScript', description: 'Proficient in ES6+, async programming, and DOM manipulation' },
+                    { name: 'JavaScript, TypeScript, Node.js, React, Next.js, HTML5, CSS3, Tailwind', 
+                        description: 'Proficient in developing modern web applications using popular frontend and backend technologies' },
+                    { name: 'Docker', description: 'Containerised applications for consistent development and deployment' },
                 ]
             },
             {
-                title: 'Tools',
+                title: 'Databases',
                 items: [
-                    { name: 'Git', description: 'Version control and collaboration using Git and GitHub' },
-                    { name: 'Docker', description: 'Containerized applications for consistent development and deployment' },
+                    { name: 'PostgreSQL, SQL, MongoDB', description: 'Experienced in working with both relational and NoSQL databases, designing schemas, and handling database interactions efficiently' },
+                ]
+            },
+            {
+                title: 'Version Control',
+                items: [
+                    { name: 'Git, GitHub, GitHub Actions', description: 'Strong experience in version control with Git, including automated CI/CD pipelines using GitHub Actions' },
+                ]
+            },
+            {
+                title: 'Agile Methodologies',
+                items: [
+                    { name: 'Pair Programming, Test-driven development (TDD), SCRUM', description: 'Experience working in Agile teams, focusing on collaboration, continuous improvement, and delivering high-quality solutions' },
+                ]
+            },
+            {
+                title: 'Testing',
+                items: [
+                    { name: 'Jest, SuperTest (Unit & Integration Testing)', description: 'Competent in ensuring code quality through automated unit and integration tests to catch bugs early in the development process' },
                 ]
             }
         ]

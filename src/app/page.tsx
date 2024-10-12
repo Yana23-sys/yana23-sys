@@ -3,7 +3,7 @@ import React from 'react';
 import { Heading, Flex, Text, Button,  Avatar, RevealFx } from '@/once-ui/components';
 import { Projects } from '@/app/work/components/Projects';
 
-import { about, baseURL, home, person } from '@/app/resources'
+import { about, baseURL, home, person, routes } from '@/app/resources'
 
 export function generateMetadata() {
 	const title = home.title;
@@ -107,10 +107,14 @@ export default function Home() {
 					</Flex>
 				
 			</Flex>
-			<RevealFx translateY="16" delay={0.6}>
-				<Projects range={[1,1]}/>
-			</RevealFx>
-			<Projects range={[2]}/>
+			{routes['/work'] && (
+				<RevealFx translateY="16" delay={0.6}>
+					<Projects range={[1,1]}/>
+				</RevealFx>
+			)}
+			{routes['/work'] && (
+				<Projects range={[2]}/>
+			)}
 		</Flex>
 	);
 }
