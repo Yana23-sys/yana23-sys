@@ -1,3 +1,0 @@
-User-Agent: *
-
-Sitemap: nextjs-portfolio.up.railway.app/sitemap.xml
