@@ -9,7 +9,7 @@ const withMDX = mdx({
 const nextConfig = {
     pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
     output: 'export',
-    assetPrefix: '/',
+    assetPrefix: '/yana23-sys/',
 };
 
 export default withMDX(nextConfig);
