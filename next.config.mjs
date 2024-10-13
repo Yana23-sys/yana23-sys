@@ -7,10 +7,7 @@ const withMDX = mdx({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
-    output: 'export',
-    basePath: '/yana23-sys',
-    assetPrefix: '/yana23-sys/'
+    pageExtensions: ['ts', 'tsx', 'md', 'mdx']
 };
 
 export default withMDX(nextConfig);
